@@ -1,0 +1,220 @@
+/* body config. */
+body {
+/*  padding-top: 54px;*/
+  background: #f1f1f1;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #3e3e88;   /* originally #f1f1f1 */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #d1722c;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555555;
+  color: white;
+}
+
+nav {
+    background: white;
+    margin-top: 0;
+    padding: 0;
+}
+
+.nav3bar {
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav3bar:hover {
+    opacity: 0.5;
+}
+
+
+/* INTRO */
+.container {
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.btn-num-red {
+    background: #bf4545;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+
+#header-mytraining {
+    padding-top: 80px;
+}
+
+#my-training {
+    background: none;
+}
+
+#btn1 {
+    background: #00aaaa;
+    margin: 20px;
+}
+
+#btn2 {
+    background: #6a6a6a;
+    margin: 20px;
+}
+/***********/
+
+/* CONTAINER BODY */
+#row-intro {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 25px;
+    background: white;
+}
+
+.row {
+    background: white;
+    padding: 10px;
+}
+
+.col-md-3 {
+    margin: 10px;
+    box-shadow: 2px 2px 10px 2px #888888;
+    border-radius: 4px;
+}
+
+#scroll-text {
+    height: 90px;
+    white-space: inherit;
+    overflow-y: scroll;
+}
+
+#due-date {
+    background: #c1c1c1;
+    border: #c1c1c1;
+    color: black;
+    font-size: 12px;
+}
+
+.placeholderImg {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+/***********/
+
+
+/* POPUP TOGGLE */
+.box {
+  padding: 10px;
+}
+
+.btn-module {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  color: #00aaaa;
+}
+.btn-module:hover {
+  background: #00aaaa;
+  opacity: 0.7;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #00aaaa;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.consumer-protect-intro {
+    margin: 10px;
+    box-shadow: 2px 2px 10px 2px #888888;
+    border-radius: 4px;
+    padding: 15px;
+    display: inline-block;
+}
+
+/*
+@media(max-width: 568px){
+    .navbar-nav{display: none}
+}
+*/
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+/***********/
